@@ -45,8 +45,8 @@ npm run dev
 # Terminal 2 — Frontend
 cd client
 npm start
+```
 
----
 
 ## API Endpoints
 
@@ -64,7 +64,6 @@ POST   /api/submit                 Run code against test cases
 GET    /api/leaderboard            Top 50 players
 GET    /api/users/me               Own profile + match history 
 GET    /api/users/:username        Public user profile
-
 ```
 
 ## Socket.io Events
@@ -86,10 +85,7 @@ SERVER → CLIENT
   match:finished    Winner declared + ELO changes
   match:timeout     Time ran out
   chat:message      New chat message
-  
 ```
-
----
 
 ## Features
 
@@ -105,7 +101,6 @@ SERVER → CLIENT
 - ✅ Dashboard with stats and match history
 - ✅ 5 seeded problems (Easy/Medium)
 
----
 
 <img width="1362" height="645" alt="image" src="https://github.com/user-attachments/assets/8fdd5164-0650-4fcb-8837-ee75563ea6f3" />
 <img width="1366" height="585" alt="image" src="https://github.com/user-attachments/assets/93b0e478-f41e-4e72-9281-485673553080" />
