@@ -2,6 +2,8 @@
 
 A full-stack competitive coding platform where users race to solve algorithmic problems in real-time.
 
+---
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -34,6 +36,7 @@ npm install
 cd ../client
 npm install
 ```
+---
 
 ### 2. Start the App
 
@@ -50,6 +53,7 @@ npm start
 
 ## API Endpoints
 
+
 ```
 POST   /api/auth/register          Create account
 POST   /api/auth/login             Login, get JWT
@@ -63,7 +67,10 @@ POST   /api/submit                 Run code against test cases
 GET    /api/leaderboard            Top 50 players
 GET    /api/users/me               Own profile + match history 
 GET    /api/users/:username        Public user profile
+
 ```
+
+---
 
 ## Socket.io Events
 
@@ -84,6 +91,7 @@ SERVER → CLIENT
   match:finished    Winner declared + ELO changes
   match:timeout     Time ran out
   chat:message      New chat message
+  
 ```
 
 ---
