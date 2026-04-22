@@ -99,13 +99,16 @@ SERVER → CLIENT
 - ✅ In-match chat
 - ✅ Leaderboard (top 50)
 - ✅ Dashboard with stats and match history
-- ✅ 5 seeded problems (Easy/Medium)
 
 
 <img width="1362" height="645" alt="image" src="https://github.com/user-attachments/assets/8fdd5164-0650-4fcb-8837-ee75563ea6f3" />
+
 <img width="1366" height="585" alt="image" src="https://github.com/user-attachments/assets/93b0e478-f41e-4e72-9281-485673553080" />
+
 <img width="1365" height="642" alt="image" src="https://github.com/user-attachments/assets/099dd514-fa1e-4a1f-b8b1-a7793e383326" />
+
 <img width="1362" height="641" alt="image" src="https://github.com/user-attachments/assets/c35e4916-6b50-466a-b7c3-b242a01da2fc" />
+
 <img width="1363" height="649" alt="image" src="https://github.com/user-attachments/assets/5ce70b5b-fad5-466e-9670-0c33419ac061" />
 
 
