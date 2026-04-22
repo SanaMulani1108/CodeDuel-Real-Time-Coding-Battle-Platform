@@ -1,0 +1,39 @@
+.dash-profile { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.dash-profile-info { flex: 1; }
+.dash-profile-info h1 { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; margin-bottom: 0.2rem; }
+.dash-elo { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+.elo-big { font-size: 2.5rem; font-weight: 700; color: var(--accent2); line-height: 1; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.stat-box { text-align: center; padding: 1.25rem; }
+.stat-num { font-size: 2rem; font-weight: 700; display: block; margin-bottom: 0.25rem; }
+.stat-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.winrate-section { padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.winrate-label { display: flex; justify-content: space-between; font-size: 0.875rem; margin-bottom: 0.6rem; }
+.winrate-track { height: 8px; background: var(--bg3); border-radius: 4px; overflow: hidden; margin-bottom: 0.5rem; }
+.winrate-bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 4px; transition: width 0.8s ease; }
+.winrate-sub { display: flex; justify-content: space-between; font-size: 0.78rem; }
+
+.recent-section h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
+.matches-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.match-row { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; }
+.match-row.win { border-left: 3px solid var(--green); }
+.match-row.loss { border-left: 3px solid var(--red); }
+.match-result-badge {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+}
+.match-result-badge.win { background: rgba(62,207,142,0.15); color: var(--green); }
+.match-result-badge.loss { background: rgba(240,111,111,0.15); color: var(--red); }
+.match-info { display: flex; align-items: center; gap: 0.75rem; flex: 1; flex-wrap: wrap; }
+.match-problem { font-weight: 500; font-size: 0.9rem; }
+.match-stats { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.elo-change { font-weight: 600; }
+
+@media (max-width: 640px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .dash-profile { flex-direction: column; text-align: center; }
+  .dash-elo { align-items: center; }
+}

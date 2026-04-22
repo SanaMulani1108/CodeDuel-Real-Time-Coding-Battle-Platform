@@ -1,0 +1,22 @@
+.lb-header { margin-bottom: 2rem; }
+.lb-header h1 { font-family: var(--serif); font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; }
+.lb-table-wrap { padding: 0; overflow: hidden; }
+.lb-table { width: 100%; border-collapse: collapse; }
+.lb-table th {
+  text-align: left; padding: 0.875rem 1.25rem;
+  font-size: 0.75rem; font-weight: 600;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+}
+.lb-table td { padding: 0.875rem 1.25rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+.lb-table tr:last-child td { border-bottom: none; }
+.lb-table tr:hover td { background: rgba(255,255,255,0.02); }
+.lb-table tr.top-rank td { background: rgba(245,200,66,0.03); }
+.rank-cell { width: 48px; }
+.rank-medal { font-size: 1.2rem; }
+.lb-player { display: flex; align-items: center; gap: 0.75rem; }
+.lb-username { font-weight: 500; }
+.elo-val { font-weight: 600; color: var(--accent2); }
+.winrate-cell { display: flex; align-items: center; gap: 0.6rem; }
+.winrate-bar { width: 80px; height: 5px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
+.winrate-fill { height: 100%; background: var(--green); border-radius: 3px; }

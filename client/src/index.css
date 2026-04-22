@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #080810;
+  --bg2:      #0f0f1a;
+  --bg3:      #16162a;
+  --card:     #12121f;
+  --border:   rgba(255,255,255,0.07);
+  --border2:  rgba(255,255,255,0.13);
+  --text:     #e8e6f0;
+  --muted:    #7a7890;
+  --accent:   #7c6af7;
+  --accent2:  #a294ff;
+  --green:    #3ecf8e;
+  --red:      #f06f6f;
+  --yellow:   #f5c842;
+  --blue:     #5b9cf6;
+  --serif:    'Syne', sans-serif;
+  --sans:     'Inter', sans-serif;
+  --mono:     'JetBrains Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* Utilities */
+.mono { font-family: var(--mono); }
+.text-muted { color: var(--muted); }
+.text-accent { color: var(--accent2); }
+.text-green { color: var(--green); }
+.text-red { color: var(--red); }
+
+/* Card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Button */
+.btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: var(--sans);
+  border: none;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border2); }
+.btn-ghost:hover { color: var(--text); border-color: var(--accent); }
+.btn-danger { background: var(--red); color: #fff; }
+.btn-success { background: var(--green); color: #000; font-weight: 700; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none !important; }
+
+/* Input */
+.input {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: var(--sans);
+  width: 100%;
+  transition: border-color 0.2s;
+  outline: none;
+}
+.input:focus { border-color: var(--accent); }
+.input::placeholder { color: var(--muted); }
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: var(--mono);
+}
+.badge-easy   { background: rgba(62,207,142,0.15); color: var(--green); }
+.badge-medium { background: rgba(245,200,66,0.15); color: var(--yellow); }
+.badge-hard   { background: rgba(240,111,111,0.15); color: var(--red); }
+.badge-accent { background: rgba(124,106,247,0.2);  color: var(--accent2); }
+
+/* Divider */
+.divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+
+/* Spinner */
+.spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Page container */
+.page { min-height: 100vh; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.page-narrow { max-width: 480px; }
+.page-center { display: flex; align-items: center; justify-content: center; flex-direction: column; }
+
+/* Form group */
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.4rem; font-weight: 500; letter-spacing: 0.03em; }
+.form-error { color: var(--red); font-size: 0.8rem; margin-top: 0.4rem; }
+
+/* Avatar */
+.avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #fff;
+  flex-shrink: 0;
+}

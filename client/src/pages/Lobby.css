@@ -1,0 +1,49 @@
+.lobby-page { min-height: calc(100vh - 60px); display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.lobby-card { width: 100%; max-width: 520px; padding: 2.5rem; }
+.lobby-header { text-align: center; margin-bottom: 2rem; }
+.lobby-header h1 { font-family: var(--serif); font-size: 1.8rem; font-weight: 700; margin-bottom: 0.4rem; }
+
+.room-code-display {
+  background: var(--bg2);
+  border: 2px dashed var(--border2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+.room-code-display:hover { border-color: var(--accent); }
+.room-code { font-size: 2.5rem; font-weight: 600; letter-spacing: 0.18em; color: var(--accent2); display: block; margin-bottom: 0.4rem; }
+.copy-hint { font-size: 0.78rem; color: var(--muted); }
+
+.match-info { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+
+.players-section h3 { font-size: 0.85rem; font-weight: 600; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+.players-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
+.player-slot {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.player-slot.filled { background: rgba(62,207,142,0.04); border-color: rgba(62,207,142,0.2); }
+.player-slot.empty { background: var(--bg2); }
+.empty-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--bg3); border: 2px dashed var(--border2); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 1.2rem; flex-shrink: 0; }
+.player-info { flex: 1; }
+.player-name { display: block; font-weight: 600; font-size: 0.95rem; }
+.player-elo { font-size: 0.75rem; color: var(--accent2); }
+.you-tag { font-size: 0.72rem; color: var(--muted); font-weight: 400; }
+.player-ready { font-size: 0.78rem; color: var(--green); font-weight: 600; }
+
+.lobby-status { text-align: center; padding: 1rem 0 0; font-size: 0.9rem; }
+
+.countdown-display { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.countdown-number { font-family: var(--serif); font-size: 4rem; font-weight: 800; color: var(--accent2); animation: pulse-scale 0.9s ease-in-out infinite; }
+@keyframes pulse-scale { 0%,100%{transform:scale(1)} 50%{transform:scale(1.15)} }
+
+.waiting-dots { display: flex; gap: 5px; margin-left: auto; }
+.waiting-dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); animation: dot-bounce 1.2s infinite; }
+.waiting-dots span:nth-child(2) { animation-delay: 0.2s; }
+.waiting-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes dot-bounce { 0%,80%,100%{transform:scale(0.6);opacity:0.5} 40%{transform:scale(1);opacity:1} }
