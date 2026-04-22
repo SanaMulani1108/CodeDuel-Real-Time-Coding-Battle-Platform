@@ -18,8 +18,6 @@ A full-stack competitive coding platform where users race to solve algorithmic p
 
 ---
 
-## Setup Instructions
-
 ### Prerequisites
 - Node.js v18+
 - MySQL 8.0+
@@ -36,7 +34,6 @@ npm install
 cd ../client
 npm install
 ```
----
 
 ### 2. Start the App
 
@@ -69,8 +66,6 @@ GET    /api/users/me               Own profile + match history
 GET    /api/users/:username        Public user profile
 
 ```
-
----
 
 ## Socket.io Events
 
